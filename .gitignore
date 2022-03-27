@@ -2,4 +2,6 @@
 # この .gitignore ファイルは Microsoft(R) Visual Studio によって自動的に作成されました。
 ################################################################################
 
-/Level1/bin/Debug
+/Level1/bin
+/Level1/obj
+/.vs
