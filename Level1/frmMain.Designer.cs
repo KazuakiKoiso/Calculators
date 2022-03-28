@@ -56,9 +56,8 @@ namespace Level1
             this.label1.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(325, 21);
+            this.label1.Size = new System.Drawing.Size(0, 21);
             this.label1.TabIndex = 0;
-            this.label1.Text = "単純な２項の四則演算だけ行います。";
             // 
             // txtExpression
             // 
@@ -287,7 +286,7 @@ namespace Level1
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmMain";
-            this.Text = "電卓レベル１";
+            this.Text = "電卓レベル１：AとBの２項の四則演算";
             this.ResumeLayout(false);
             this.PerformLayout();
 
