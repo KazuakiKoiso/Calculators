@@ -1,49 +1,63 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Level1
 {
     public partial class frmMain : Form
     {
+        /// <summary>現在の入力モード</summary>
         private enum Mode
         {
+            /// <summary>値１を入力中</summary>
             Value1,
+            /// <summary>値２を入力中</summary>
             Value2,
+            /// <summary>計算完了</summary>
             Calculated,
         }
+        /// <summary>計算種別</summary>
         private enum CalcType
         {
+            /// <summary>未入力</summary>
             None,
+            /// <summary>加算</summary>
             Plus,
+            /// <summary>減算</summary>
             Minus,
+            /// <summary>乗算</summary>
             Multi,
+            /// <summary>除算</summary>
             Division,
         }
+        /// <summary>値１</summary>
         private double _value1;
+        /// <summary>値２</summary>
         private double _value2;
+        /// <summary>値１の有無</summary>
         private bool _hasValue1;
+        /// <summary>値２の有無</summary>
         private bool _hasValue2;
+        /// <summary>計算種別</summary>
         private CalcType _calcType;
+        /// <summary>現在の入力モード</summary>
         private Mode _currentMode;
 
+        /// <summary>コンストラクタ</summary>
         public frmMain()
         {
             InitializeComponent();
             EnableButtons();
         }
 
+        /// <summary>現在入力中の値を取得</summary>
+        /// <returns>現在入力中の値</returns>
         private double GetCurrentValue()
         {
             return _currentMode == Mode.Value1 ? _value1 : _value2;
         }
 
+        /// <summary>現在入力中の値を設定</summary>
+        /// <param name="value">設定値</param>
         private void SetCurrentValue(double value)
         {
             if (_currentMode == Mode.Value1)
@@ -58,66 +72,99 @@ namespace Level1
             }
         }
 
+        /// <summary>0ボタンが押された時の処理</summary>
+        /// <param name="sender">押されたボタン</param>
+        /// <param name="e">イベント情報</param>
         private void btn0_Click(object sender, EventArgs e)
         {
             SetCurrentValue(GetCurrentValue() * 10);
             txtExpression.Text = MakeExpression();
         }
 
+        /// <summary>1ボタンが押された時の処理</summary>
+        /// <param name="sender">押されたボタン</param>
+        /// <param name="e">イベント情報</param>
         private void btn1_Click(object sender, EventArgs e)
         {
             SetCurrentValue(GetCurrentValue() * 10 + 1);
             txtExpression.Text = MakeExpression();
         }
 
+        /// <summary>2ボタンが押された時の処理</summary>
+        /// <param name="sender">押されたボタン</param>
+        /// <param name="e">イベント情報</param>
         private void btn2_Click(object sender, EventArgs e)
         {
             SetCurrentValue(GetCurrentValue() * 10 + 2);
             txtExpression.Text = MakeExpression();
         }
 
+        /// <summary>3ボタンが押された時の処理</summary>
+        /// <param name="sender">押されたボタン</param>
+        /// <param name="e">イベント情報</param>
         private void btn3_Click(object sender, EventArgs e)
         {
             SetCurrentValue(GetCurrentValue() * 10 + 3);
             txtExpression.Text = MakeExpression();
         }
 
+        /// <summary>4ボタンが押された時の処理</summary>
+        /// <param name="sender">押されたボタン</param>
+        /// <param name="e">イベント情報</param>
         private void btn4_Click(object sender, EventArgs e)
         {
             SetCurrentValue(GetCurrentValue() * 10 + 4);
             txtExpression.Text = MakeExpression();
         }
 
+        /// <summary>5ボタンが押された時の処理</summary>
+        /// <param name="sender">押されたボタン</param>
+        /// <param name="e">イベント情報</param>
         private void btn5_Click(object sender, EventArgs e)
         {
             SetCurrentValue(GetCurrentValue() * 10 + 5);
             txtExpression.Text = MakeExpression();
         }
 
+        /// <summary>6ボタンが押された時の処理</summary>
+        /// <param name="sender">押されたボタン</param>
+        /// <param name="e">イベント情報</param>
         private void btn6_Click(object sender, EventArgs e)
         {
             SetCurrentValue(GetCurrentValue() * 10 + 6);
             txtExpression.Text = MakeExpression();
         }
 
+        /// <summary>7ボタンが押された時の処理</summary>
+        /// <param name="sender">押されたボタン</param>
+        /// <param name="e">イベント情報</param>
         private void btn7_Click(object sender, EventArgs e)
         {
             SetCurrentValue(GetCurrentValue() * 10 + 7);
             txtExpression.Text = MakeExpression();
         }
 
+        /// <summary>8ボタンが押された時の処理</summary>
+        /// <param name="sender">押されたボタン</param>
+        /// <param name="e">イベント情報</param>
         private void btn8_Click(object sender, EventArgs e)
         {
             SetCurrentValue(GetCurrentValue() * 10 + 8);
             txtExpression.Text = MakeExpression();
         }
 
+        /// <summary>9ボタンが押された時の処理</summary>
+        /// <param name="sender">押されたボタン</param>
+        /// <param name="e">イベント情報</param>
         private void btn9_Click(object sender, EventArgs e)
         {
             SetCurrentValue(GetCurrentValue() * 10 + 9);
             txtExpression.Text = MakeExpression();
         }
 
+        /// <summary>＋ボタンが押された時の処理</summary>
+        /// <param name="sender">押されたボタン</param>
+        /// <param name="e">イベント情報</param>
         private void btnPlus_Click(object sender, EventArgs e)
         {
             _calcType = CalcType.Plus;
@@ -126,6 +173,9 @@ namespace Level1
             EnableButtons();
         }
 
+        /// <summary>－ボタンが押された時の処理</summary>
+        /// <param name="sender">押されたボタン</param>
+        /// <param name="e">イベント情報</param>
         private void btnMinus_Click(object sender, EventArgs e)
         {
             _calcType = CalcType.Minus;
@@ -134,6 +184,9 @@ namespace Level1
             EnableButtons();
         }
 
+        /// <summary>×ボタンが押された時の処理</summary>
+        /// <param name="sender">押されたボタン</param>
+        /// <param name="e">イベント情報</param>
         private void btnMulti_Click(object sender, EventArgs e)
         {
             _calcType = CalcType.Multi;
@@ -142,6 +195,9 @@ namespace Level1
             EnableButtons();
         }
 
+        /// <summary>÷ボタンが押された時の処理</summary>
+        /// <param name="sender">押されたボタン</param>
+        /// <param name="e">イベント情報</param>
         private void btnDivision_Click(object sender, EventArgs e)
         {
             _calcType = CalcType.Division;
@@ -150,6 +206,9 @@ namespace Level1
             EnableButtons();
         }
 
+        /// <summary>＝ボタンが押された時の処理</summary>
+        /// <param name="sender">押されたボタン</param>
+        /// <param name="e">イベント情報</param>
         private void btnEqual_Click(object sender, EventArgs e)
         {
             double result = 0;
@@ -173,6 +232,9 @@ namespace Level1
             EnableButtons();
         }
 
+        /// <summary>Cボタンが押された時の処理</summary>
+        /// <param name="sender">押されたボタン</param>
+        /// <param name="e">イベント情報</param>
         private void btnClear_Click(object sender, EventArgs e)
         {
             switch (_currentMode)
@@ -198,6 +260,9 @@ namespace Level1
             EnableButtons();
         }
 
+        /// <summary>ACボタンが押された時の処理</summary>
+        /// <param name="sender">押されたボタン</param>
+        /// <param name="e">イベント情報</param>
         private void btnAllClear_Click(object sender, EventArgs e)
         {
             _value1 = 0;
@@ -210,6 +275,8 @@ namespace Level1
             EnableButtons();
         }
 
+        /// <summary>計算式を文字列化する</summary>
+        /// <returns>計算式</returns>
         private string MakeExpression()
         {
             string expression = string.Empty;
@@ -234,6 +301,7 @@ namespace Level1
             return expression;
         }
 
+        /// <summary>各ボタンのEnabledを制御する</summary>
         private void EnableButtons()
         {
             btn1.Enabled = (_currentMode != Mode.Calculated);
