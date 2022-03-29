@@ -16,7 +16,7 @@ namespace Level2
             Calculated,
         }
         /// <summary>計算種別</summary>
-        private enum CalcType
+        private enum OperateType
         {
             /// <summary>未入力</summary>
             None,
@@ -34,7 +34,7 @@ namespace Level2
         /// <summary>値２</summary>
         private double? _value2;
         /// <summary>計算種別</summary>
-        private CalcType _calcType;
+        private OperateType _calcType;
         /// <summary>現在の入力モード</summary>
         private Mode _currentMode;
 
@@ -88,7 +88,7 @@ namespace Level2
         /// <param name="e">イベント情報</param>
         private void btnOperator_Click(object sender, EventArgs e)
         {
-            CalcType type = (CalcType)Enum.Parse(typeof(CalcType), (sender as Button).Tag.ToString());
+            OperateType type = (OperateType)Enum.Parse(typeof(OperateType), (sender as Button).Tag.ToString());
             _calcType = type;
             _currentMode = Mode.Value2;
             txtExpression.Text = MakeExpression();
@@ -104,19 +104,19 @@ namespace Level2
             switch (_calcType)
             {
                 // 加算
-                case CalcType.Plus:
+                case OperateType.Plus:
                     result = _value1.Value + _value2.Value;
                     break;
                 // 減算
-                case CalcType.Minus:
+                case OperateType.Minus:
                     result = _value1.Value - _value2.Value;
                     break;
                 // 乗算
-                case CalcType.Multi:
+                case OperateType.Multi:
                     result = _value1.Value * _value2.Value;
                     break;
                 // 除算
-                case CalcType.Division:
+                case OperateType.Division:
                     result = _value1.Value / _value2.Value;
                     break;
             }
@@ -141,7 +141,7 @@ namespace Level2
                     else
                     {
                         // 値２が未入力の場合は演算子の入力をクリアする
-                        _calcType = CalcType.None;
+                        _calcType = OperateType.None;
                         _currentMode = Mode.Value1;
                     }
                     break;
@@ -161,7 +161,7 @@ namespace Level2
         {
             _value1 = 0;
             _value2 = 0;
-            _calcType = CalcType.None;
+            _calcType = OperateType.None;
             _currentMode = Mode.Value1;
             txtExpression.Text = string.Empty;
             EnableButtons();
@@ -174,19 +174,19 @@ namespace Level2
             string expression = string.Empty;
             switch (_calcType)
             {
-                case CalcType.None:
+                case OperateType.None:
                     expression = _value1.ToString();
                     break;
-                case CalcType.Plus:
+                case OperateType.Plus:
                     expression = $"{_value1?.ToString()} ＋ {_value2?.ToString()}";
                     break;
-                case CalcType.Minus:
+                case OperateType.Minus:
                     expression = $"{_value1?.ToString()} － {_value2?.ToString()}";
                     break;
-                case CalcType.Multi:
+                case OperateType.Multi:
                     expression = $"{_value1?.ToString()} × {_value2?.ToString()}";
                     break;
-                case CalcType.Division:
+                case OperateType.Division:
                     expression = $"{_value1?.ToString()} ÷ {_value2?.ToString()}";
                     break;
             }

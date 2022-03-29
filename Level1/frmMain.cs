@@ -16,7 +16,7 @@ namespace Level1
             Calculated,
         }
         /// <summary>計算種別</summary>
-        private enum CalcType
+        private enum OperateType
         {
             /// <summary>未入力</summary>
             None,
@@ -38,7 +38,7 @@ namespace Level1
         /// <summary>値２の有無</summary>
         private bool _hasValue2;
         /// <summary>計算種別</summary>
-        private CalcType _calcType;
+        private OperateType _calcType;
         /// <summary>現在の入力モード</summary>
         private Mode _currentMode;
 
@@ -167,7 +167,7 @@ namespace Level1
         /// <param name="e">イベント情報</param>
         private void btnPlus_Click(object sender, EventArgs e)
         {
-            _calcType = CalcType.Plus;
+            _calcType = OperateType.Plus;
             _currentMode = Mode.Value2;
             txtExpression.Text = MakeExpression();
             EnableButtons();
@@ -178,7 +178,7 @@ namespace Level1
         /// <param name="e">イベント情報</param>
         private void btnMinus_Click(object sender, EventArgs e)
         {
-            _calcType = CalcType.Minus;
+            _calcType = OperateType.Minus;
             _currentMode = Mode.Value2;
             txtExpression.Text = MakeExpression();
             EnableButtons();
@@ -189,7 +189,7 @@ namespace Level1
         /// <param name="e">イベント情報</param>
         private void btnMulti_Click(object sender, EventArgs e)
         {
-            _calcType = CalcType.Multi;
+            _calcType = OperateType.Multi;
             _currentMode = Mode.Value2;
             txtExpression.Text = MakeExpression();
             EnableButtons();
@@ -200,7 +200,7 @@ namespace Level1
         /// <param name="e">イベント情報</param>
         private void btnDivision_Click(object sender, EventArgs e)
         {
-            _calcType = CalcType.Division;
+            _calcType = OperateType.Division;
             _currentMode = Mode.Value2;
             txtExpression.Text = MakeExpression();
             EnableButtons();
@@ -214,16 +214,16 @@ namespace Level1
             double result = 0;
             switch (_calcType)
             {
-                case CalcType.Plus:
+                case OperateType.Plus:
                     result = _value1 + _value2;
                     break;
-                case CalcType.Minus:
+                case OperateType.Minus:
                     result = _value1 - _value2;
                     break;
-                case CalcType.Multi:
+                case OperateType.Multi:
                     result = _value1 * _value2;
                     break;
-                case CalcType.Division:
+                case OperateType.Division:
                     result = _value1 / _value2;
                     break;
             }
@@ -247,7 +247,7 @@ namespace Level1
                     }
                     else
                     {
-                        _calcType = CalcType.None;
+                        _calcType = OperateType.None;
                         _currentMode = Mode.Value1;
                     }
                     break;
@@ -267,7 +267,7 @@ namespace Level1
         {
             _value1 = 0;
             _value2 = 0;
-            _calcType = CalcType.None;
+            _calcType = OperateType.None;
             _currentMode = Mode.Value1;
             txtExpression.Text = string.Empty;
             _hasValue1 = false;
@@ -282,19 +282,19 @@ namespace Level1
             string expression = string.Empty;
             switch (_calcType)
             {
-                case CalcType.None:
+                case OperateType.None:
                     expression = _value1.ToString();
                     break;
-                case CalcType.Plus:
+                case OperateType.Plus:
                     expression = $"{_value1.ToString()} ＋ {_value2.ToString()}";
                     break;
-                case CalcType.Minus:
+                case OperateType.Minus:
                     expression = $"{_value1.ToString()} － {_value2.ToString()}";
                     break;
-                case CalcType.Multi:
+                case OperateType.Multi:
                     expression = $"{_value1.ToString()} × {_value2.ToString()}";
                     break;
-                case CalcType.Division:
+                case OperateType.Division:
                     expression = $"{_value1.ToString()} ÷ {_value2.ToString()}";
                     break;
             }
