@@ -71,10 +71,10 @@ namespace Level1
             // btn9
             // 
             this.btn9.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn9.Location = new System.Drawing.Point(16, 143);
+            this.btn9.Location = new System.Drawing.Point(168, 143);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(70, 70);
-            this.btn9.TabIndex = 4;
+            this.btn9.TabIndex = 6;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = true;
             this.btn9.Click += new System.EventHandler(this.btn9_Click);
@@ -93,10 +93,10 @@ namespace Level1
             // btn7
             // 
             this.btn7.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn7.Location = new System.Drawing.Point(168, 143);
+            this.btn7.Location = new System.Drawing.Point(16, 143);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(70, 70);
-            this.btn7.TabIndex = 6;
+            this.btn7.TabIndex = 4;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = true;
             this.btn7.Click += new System.EventHandler(this.btn7_Click);
@@ -104,10 +104,10 @@ namespace Level1
             // btn6
             // 
             this.btn6.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn6.Location = new System.Drawing.Point(16, 219);
+            this.btn6.Location = new System.Drawing.Point(168, 219);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(70, 70);
-            this.btn6.TabIndex = 8;
+            this.btn6.TabIndex = 10;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = true;
             this.btn6.Click += new System.EventHandler(this.btn6_Click);
@@ -126,10 +126,10 @@ namespace Level1
             // btn4
             // 
             this.btn4.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn4.Location = new System.Drawing.Point(168, 219);
+            this.btn4.Location = new System.Drawing.Point(16, 219);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(70, 70);
-            this.btn4.TabIndex = 10;
+            this.btn4.TabIndex = 8;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = true;
             this.btn4.Click += new System.EventHandler(this.btn4_Click);
@@ -137,10 +137,10 @@ namespace Level1
             // btn3
             // 
             this.btn3.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn3.Location = new System.Drawing.Point(16, 295);
+            this.btn3.Location = new System.Drawing.Point(168, 295);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(70, 70);
-            this.btn3.TabIndex = 12;
+            this.btn3.TabIndex = 14;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = true;
             this.btn3.Click += new System.EventHandler(this.btn3_Click);
@@ -159,10 +159,10 @@ namespace Level1
             // btn1
             // 
             this.btn1.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn1.Location = new System.Drawing.Point(168, 295);
+            this.btn1.Location = new System.Drawing.Point(16, 295);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(70, 70);
-            this.btn1.TabIndex = 14;
+            this.btn1.TabIndex = 12;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = true;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);

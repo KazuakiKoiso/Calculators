@@ -56,15 +56,15 @@ namespace Level2
             this.txtExpression.Location = new System.Drawing.Point(16, 33);
             this.txtExpression.Name = "txtExpression";
             this.txtExpression.Size = new System.Drawing.Size(298, 28);
-            this.txtExpression.TabIndex = 1;
+            this.txtExpression.TabIndex = 0;
             // 
             // btn9
             // 
             this.btn9.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn9.Location = new System.Drawing.Point(16, 143);
+            this.btn9.Location = new System.Drawing.Point(168, 143);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(70, 70);
-            this.btn9.TabIndex = 4;
+            this.btn9.TabIndex = 5;
             this.btn9.Tag = "9";
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = true;
@@ -76,7 +76,7 @@ namespace Level2
             this.btn8.Location = new System.Drawing.Point(92, 143);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(70, 70);
-            this.btn8.TabIndex = 5;
+            this.btn8.TabIndex = 4;
             this.btn8.Tag = "8";
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = true;
@@ -85,10 +85,10 @@ namespace Level2
             // btn7
             // 
             this.btn7.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn7.Location = new System.Drawing.Point(168, 143);
+            this.btn7.Location = new System.Drawing.Point(16, 143);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(70, 70);
-            this.btn7.TabIndex = 6;
+            this.btn7.TabIndex = 3;
             this.btn7.Tag = "7";
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = true;
@@ -97,10 +97,10 @@ namespace Level2
             // btn6
             // 
             this.btn6.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn6.Location = new System.Drawing.Point(16, 219);
+            this.btn6.Location = new System.Drawing.Point(168, 219);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(70, 70);
-            this.btn6.TabIndex = 8;
+            this.btn6.TabIndex = 9;
             this.btn6.Tag = "6";
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = true;
@@ -112,7 +112,7 @@ namespace Level2
             this.btn5.Location = new System.Drawing.Point(92, 219);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(70, 70);
-            this.btn5.TabIndex = 9;
+            this.btn5.TabIndex = 8;
             this.btn5.Tag = "5";
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = true;
@@ -121,10 +121,10 @@ namespace Level2
             // btn4
             // 
             this.btn4.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn4.Location = new System.Drawing.Point(168, 219);
+            this.btn4.Location = new System.Drawing.Point(16, 219);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(70, 70);
-            this.btn4.TabIndex = 10;
+            this.btn4.TabIndex = 7;
             this.btn4.Tag = "4";
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = true;
@@ -133,10 +133,10 @@ namespace Level2
             // btn3
             // 
             this.btn3.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn3.Location = new System.Drawing.Point(16, 295);
+            this.btn3.Location = new System.Drawing.Point(168, 295);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(70, 70);
-            this.btn3.TabIndex = 12;
+            this.btn3.TabIndex = 13;
             this.btn3.Tag = "3";
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = true;
@@ -148,7 +148,7 @@ namespace Level2
             this.btn2.Location = new System.Drawing.Point(92, 295);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(70, 70);
-            this.btn2.TabIndex = 13;
+            this.btn2.TabIndex = 12;
             this.btn2.Tag = "2";
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = true;
@@ -157,10 +157,10 @@ namespace Level2
             // btn1
             // 
             this.btn1.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.btn1.Location = new System.Drawing.Point(168, 295);
+            this.btn1.Location = new System.Drawing.Point(16, 295);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(70, 70);
-            this.btn1.TabIndex = 14;
+            this.btn1.TabIndex = 11;
             this.btn1.Tag = "1";
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = true;
@@ -172,7 +172,7 @@ namespace Level2
             this.btn0.Location = new System.Drawing.Point(16, 371);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(70, 70);
-            this.btn0.TabIndex = 16;
+            this.btn0.TabIndex = 15;
             this.btn0.Tag = "0";
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = true;
@@ -184,7 +184,7 @@ namespace Level2
             this.btnEqual.Location = new System.Drawing.Point(92, 371);
             this.btnEqual.Name = "btnEqual";
             this.btnEqual.Size = new System.Drawing.Size(146, 70);
-            this.btnEqual.TabIndex = 17;
+            this.btnEqual.TabIndex = 16;
             this.btnEqual.Text = "＝";
             this.btnEqual.UseVisualStyleBackColor = true;
             this.btnEqual.Click += new System.EventHandler(this.btnEqual_Click);
@@ -195,7 +195,7 @@ namespace Level2
             this.btnPlus.Location = new System.Drawing.Point(244, 143);
             this.btnPlus.Name = "btnPlus";
             this.btnPlus.Size = new System.Drawing.Size(70, 70);
-            this.btnPlus.TabIndex = 7;
+            this.btnPlus.TabIndex = 6;
             this.btnPlus.Tag = "Plus";
             this.btnPlus.Text = "＋";
             this.btnPlus.UseVisualStyleBackColor = true;
@@ -207,7 +207,7 @@ namespace Level2
             this.btnMinus.Location = new System.Drawing.Point(244, 219);
             this.btnMinus.Name = "btnMinus";
             this.btnMinus.Size = new System.Drawing.Size(70, 70);
-            this.btnMinus.TabIndex = 11;
+            this.btnMinus.TabIndex = 10;
             this.btnMinus.Tag = "Minus";
             this.btnMinus.Text = "－";
             this.btnMinus.UseVisualStyleBackColor = true;
@@ -219,7 +219,7 @@ namespace Level2
             this.btnMulti.Location = new System.Drawing.Point(244, 295);
             this.btnMulti.Name = "btnMulti";
             this.btnMulti.Size = new System.Drawing.Size(70, 70);
-            this.btnMulti.TabIndex = 15;
+            this.btnMulti.TabIndex = 14;
             this.btnMulti.Tag = "Multi";
             this.btnMulti.Text = "×";
             this.btnMulti.UseVisualStyleBackColor = true;
@@ -231,7 +231,7 @@ namespace Level2
             this.btnDivision.Location = new System.Drawing.Point(244, 371);
             this.btnDivision.Name = "btnDivision";
             this.btnDivision.Size = new System.Drawing.Size(70, 70);
-            this.btnDivision.TabIndex = 18;
+            this.btnDivision.TabIndex = 17;
             this.btnDivision.Tag = "Division";
             this.btnDivision.Text = "÷";
             this.btnDivision.UseVisualStyleBackColor = true;
@@ -244,7 +244,7 @@ namespace Level2
             this.btnAllClear.Location = new System.Drawing.Point(244, 67);
             this.btnAllClear.Name = "btnAllClear";
             this.btnAllClear.Size = new System.Drawing.Size(70, 70);
-            this.btnAllClear.TabIndex = 3;
+            this.btnAllClear.TabIndex = 2;
             this.btnAllClear.Text = "AC";
             this.btnAllClear.UseVisualStyleBackColor = true;
             this.btnAllClear.Click += new System.EventHandler(this.btnAllClear_Click);
@@ -255,7 +255,7 @@ namespace Level2
             this.btnClear.Location = new System.Drawing.Point(168, 67);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(70, 70);
-            this.btnClear.TabIndex = 2;
+            this.btnClear.TabIndex = 1;
             this.btnClear.Text = "C";
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
