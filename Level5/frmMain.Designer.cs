@@ -303,7 +303,7 @@ namespace Level5
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmMain";
-            this.Text = "電卓レベル４：複数項に対応";
+            this.Text = "電卓レベル５：乗算と除算を優先";
             this.ResumeLayout(false);
             this.PerformLayout();
 
